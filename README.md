@@ -395,7 +395,7 @@ Bearer 40_character_Particle_access_token
 # Example use cases
 After your device is connected to Blynk, this integration can be easily modified to include more functionality. 
 
-- Blynk no-code [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) and [Mobile App](https://docs.blynk.io/en/blynk.apps/constructor) builders make it easy to create custom interfaces to visualize data and interact with an IoT device.
+- Blynk no-code [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) and [Mobile App](https://docs.blynk.io/en/blynk.apps/constructor) builder make it easy to create custom interfaces to visualize data and interact with an IoT device.
 - Blynk [Automations](https://docs.blynk.io/en/concepts/automations) allows the end-user of your app to create scenarios where the device automatically performs one or more actions based on a condition. For example, you can trigger a phone notification or send an email when the Particle device detects a sensor condition of interest.
 - Blynk [User Management](https://docs.blynk.io/en/concepts/users) functionality allows you to share devices with other users - from a few to thousands and offers a simple and flexible way to set up and manage multi-tenant IoT applications at any scale, 
 - Blynk [Organizations](https://docs.blynk.io/en/concepts/organizations) enable you to categorize your devices and users, assigning them roles, permissions, and locations.
