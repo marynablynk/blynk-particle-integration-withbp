@@ -41,7 +41,7 @@ Go to [Blynk Console](https://blynk.cloud/) to sign in or to create a new accoun
 ## Configure Blynk Template
 
 ### Create a Template
-In the Blynk.Console, navigate to **Templates** > **My Templates** and click on the **New Template** button at the upper right of the page. Give the template a name such as 'ParticleDeviceIntegration', set the **Hardware** field to Particle, and choose the appropriate **Connection type** of GSM for cellular devices, or WiFi and click **Done**
+In the Blynk.Console, navigate to **Templates** > **My Templates** and click on the **New Template** button at the upper right of the page. Give the template a name such as 'ParticleDeviceIntegration', set the **Hardware** field to Particle, and choose the appropriate **Connection type** of GSM for cellular devices, or WiFi and click **Done**.
 
 ### Configure Datastreams
 Go to the **Datastreams** tab in the Template you created. Click **New Datastream** > **Virtual Pin** and configure five datastreams as shown in the Datastream Settings table that follows. It is important to configure the Pin, Data Type, Is Raw, Min, Max, and Default Value as shown. Click the **Save** button at the upper right of the screen when all of the datastreams have been defined. 
