@@ -93,7 +93,7 @@ Blynk Datastreams are bi-directional channels assigned a data type and link to d
 
 The datastreams should appear like on the image below when properly configured (fields Pin, Data Type, Is Raw, Min, Max, and Default Value must match exactly).
 
-![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/3f01dddde87793a48977412cc597aca8b060f49b/particle_integration_guide(20).png "Datastreams")
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/datastreams.png "Datastreams")
 
 
 ### Create a Web Dashboard
