@@ -3,7 +3,7 @@ Particle has teamed up with Blynk to create a webhook integration with the [Blyn
 
 Blynk is a hardware-agnostic IoT platform that provides a no-code web dashboard and mobile apps for the data visualization, and remote control of any IoT device. Both the native mobile apps for iOS and Android and the web dashboard are built with drag-and-drop widgets, eliminating the need to write code for the front end. Blynk also includes built-in functionality for over-the-air firmware updates, device provisioning, advanced device and user management tools, alerts and notifications, automations, and data analytics.  
 
-![alt text](https://raw.githubusercontent.com/marynablynk/marynasrepo/main/Particle-integr/blynk-particle-logo.png?token=GHSAT0AAAAAACAAU6PFFJZVSVTRZOKFYCVMZFQEBZQ)
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/blynk-particle-logo.png "Particle Blynk Logo")
 
 This integration enables bi-directional communication between any Particle hardware and [Blynk IoT](https://blynk.io/). It allows visualization of the data and control of the Particle device remotely via the Blynk web and mobile dashboard.
 
@@ -104,8 +104,11 @@ The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) 
 3. Configure each widget as shown in the image that follows. 
 4. After all widgets are configured, click **Save and Apply**. 
 
-![alt text](https://raw.githubusercontent.com/marynablynk/marynasrepo/main/Particle-integr/dashboard.png?token=GHSAT0AAAAAACAAU6PEAZW5OX5MJSDDGXQMZFPYZSQ "Dashboard layout")
-![alt text](https://raw.githubusercontent.com/marynablynk/marynasrepo/main/Particle-integr/widgets.png?token=GHSAT0AAAAAACAAU6PEZXP57FI7AVOVA2BQZFP4D2A "Widget settings")
+**Dashboard layout**
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/dashboard.png "Dashboard layout")
+
+**Widgets settings**
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/widgets.png "Widget settings")
 
 ### Create a Mobile Dashboard
 The Blynk app in [Developer Mode](https://docs.blynk.io/en/blynk.apps/overview#developer-mode) enables you to interactively build a custom app by selecting widgets and then configuring them. When the app is in [End-user Mode](https://docs.blynk.io/en/blynk.apps/overview#end-user-mode) it will present the app with widgets to the user with a behavior just like any other native app.
@@ -314,7 +317,7 @@ _The keys on the left (token, V6, V14, V15, V16, V17) refer to Blynk datastreams
 6. Click on **Create Webhook**
 
 #### The Webhook should look like this:
-![alt text](https://raw.githubusercontent.com/marynablynk/marynasrepo/main/Particle-integr/particle-webhook.png?token=GHSAT0AAAAAACAAU6PEIZHGBBNDJIZKBIAWZFO3NNA)
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/particle-webhook.png "Particle webhook")
 
 
 Particle.publish() call in the firmware:
@@ -332,11 +335,11 @@ You can learn more about Particle webhooks by visiting this [documentation link]
 ### Generate Particle Access Token
 The Blynk webhook will need a Particle access token to make a Particle HTTP API call to the Particle cloud function.  
 
-1. Browse to the Particle documentation section [Create a token (browser-based)](https://docs.particle.io/reference/cloud-apis/access-tokens/#create-a-token-browser-based-). 
+1. Browse to the Particle documentation section [Create a token](https://docs.particle.io/reference/cloud-apis/access-tokens/#create-a-token-browser-based-) (browser based). 
 2. Enter your Particle login email and password into the form. If you have MFA (multi-factor authentication) enabled on your account, you will need your MFA code to generate the access token. 
 4. Click the **Create token** button to generate a token. Keep this token confidential. 
 
-![alt text]( "Particle Access Token")
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/particle-token.png "Particle Access Token")
 
 ## Blynk webhook setup
 Control of the Particle hardware remotely from the Blynk web dashboard or mobile app is accomplished using a Blynk webhook and the Particle HTTP API. When the state of the switch widget on the Blynk web dashboard or mobile app is changed, a Blynk webhook assigned to the same datastream is called. The webhook makes a Particle HTTP API call to a Particle cloud function with a device-unique token that sends data to the Particle hardware. 
@@ -347,7 +350,7 @@ Control of the Particle hardware remotely from the Blynk web dashboard or mobile
 
 Note that the **Blynk webhook request quota is 1 per minute*** so any datastream value changes sooner than 60 seconds will not execute the webhook.
 
-![alt text](https://raw.githubusercontent.com/marynablynk/marynasrepo/main/Particle-integr/blynk-webhook.png?token=GHSAT0AAAAAACAAU6PEIPHYTXU5YEGQIY5UZFORP6Q "Blynk Webhook")
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/blynk-webhook.png "Blynk Webhook")
 
 
 **Webhook URL**
@@ -378,7 +381,7 @@ Bearer 40_character_Particle_access_token
 
 ## Testing
 1. Test the Particle cloud function running in the firmware by calling it from the Particle console. With your Particle hardware running, visit [here](https://docs.blynk.io/en/hardware-guides/particle-part-ii#firmware) for detailed instructions on how to call 'blynk_led'. Go to your [Particle console](https://console.particle.io/), select the Particle device, and then under the **Functions** section on the right side of the screen you will see the function key of ‘blynk_led’ listed. Enter **‘on’** in the **Argument** input area and click the **CALL** button. Observe the Particle device to confirm that the built-in blue LED on D7 turns on. Repeat with the **‘off’** argument to turn off the LED.
-![alt text](https://github.com/markwkiehl/particle_integration_guide_blynk/raw/59f149a5b40fb303f964560b048a17e580acb575/particle_device_blueprint%20(12).jpg "Particle Function")
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/functions-blynk-led.jpeg"Particle Function")
 2. Verify that your Particle access token is correct by using the Particle API to test it. Detailed instructions on how to do this using [Postman](https://www.postman.com/) can be found [here](https://docs.blynk.io/en/hardware-guides/particle-part-ii#particle-api).
 3. Test the Blynk webhook by installing the firmware on your Particle hardware, and then click **Test webhook** to verify it doesn’t throw an error (it won’t send the datastream value here, so don’t expect to see the LED on your Particle device change). Then from the Blynk web dashboard or mobile app, toggle the switch assigned to datastream V16 and observe the built-in LED on the hardware if it exists, or the Blynk LED widget if no built-in LED exists. Wait 60 seconds between each toggle of the switch widget.
 4. Review the Particle device log to confirm the device is connected and to see what data has been published from the hardware to the Particle cloud. 
