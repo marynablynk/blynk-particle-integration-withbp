@@ -41,7 +41,7 @@ Go to [Blynk Console](https://blynk.cloud/) to sign in or to create a new accoun
 ## Configure Blynk Template
 
 ### Create a Template
-In the Blynk.Console, navigate to **Templates** > **My Templates** and click on the **New Template** button at the upper right of the page. Give the template a name such as 'ParticleDeviceIntegration', set the **Hardware** field to Particle, and choose the appropriate **Connection type** of GSM for cellular devices, or WiFi and click **Done**.
+In the Blynk.Console, navigate to **Templates** > **My Templates** and click on the **New Template** button at the upper right of the page (make sure the [Developer Mode](https://docs.blynk.io/en/concepts/developer-mode) is enabled). Give the template a name such as 'ParticleDeviceIntegration', set the **Hardware** field to Particle, and choose the appropriate **Connection type** of GSM for cellular devices, or WiFi and click **Done**.
 
 ### Configure Datastreams
 Go to the **Datastreams** tab in the Template you created. Click **New Datastream** > **Virtual Pin** and configure five datastreams as shown in the Datastream Settings table that follows. It is important to configure the Pin, Data Type, Is Raw, Min, Max, and Default Value as shown. Click the **Save** button at the upper right of the screen when all of the datastreams have been defined. 
@@ -113,7 +113,7 @@ The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard) 
 ### Create a Mobile Dashboard
 The Blynk app in [Developer Mode](https://docs.blynk.io/en/blynk.apps/overview#developer-mode) enables you to interactively build a custom app by selecting widgets and then configuring them. When the app is in [End-user Mode](https://docs.blynk.io/en/blynk.apps/overview#end-user-mode) it will present the app with widgets to the user with a behavior just like any other native app.
 
-Create an app layout in the [Developer Mode](https://docs.blynk.io/en/blynk.apps/constructor#how-to-enable-developer-mode) using the [Mobile Dashboard Editor](https://docs.blynk.io/en/blynk.apps/constructor). The exact steps vary between iOS and Android - begin by tapping on the Particle device you activated earlier, tap on the wrench icon, and then the **+** icon to add a widget. Add the following widgets: SuperChart (datastreams V14, V15), Labeled Value (V14), Labeled Value (V15), Button (V16), LED (V17), Labeled Value (V6).
+Using the [Mobile Dashboard Editor](https://docs.blynk.io/en/blynk.apps/constructor) create a UI layout. The exact steps vary between iOS and Android - begin by tapping on the Particle device you activated earlier, tap on the wrench icon, and then the **+** icon to add a widget. Add the following widgets: SuperChart (datastreams V14, V15), Labeled Value (V14), Labeled Value (V15), Button (V16), LED (V17), Labeled Value (V6).
 
 Tap and hold your finger on a widget and drag it to the desired position. Use green handles to resize the widget. 
 
