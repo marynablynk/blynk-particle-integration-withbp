@@ -5,7 +5,7 @@ Blynk is a low-code IoT software platform for connecting devices to the cloud, b
 
 ![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/blynk-particle-logo.png "Particle Blynk Logo")
 
-This integration enables bi-directional communication between any Particle hardware and [Blynk IoT](https://blynk.io/). It allows visualization of the data and control of the Particle device remotely via the Blynk web and mobile dashboard.
+This integration enables bi-directional communication between any Particle hardware and Blynk IoT. It allows visualization of the data and control of the Particle device remotely via the Blynk web and mobile dashboard.
 
 # Key concepts in Blynk IoT
 
