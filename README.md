@@ -1,7 +1,7 @@
 # Blynk IoT
 Particle has teamed up with Blynk to create a webhook integration with the [Blynk IoT platform](https://blynk.io/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs).
 
-Blynk is a low-code IoT software platform for connecting devices to the cloud, building mobile apps to remotely control and monitor them, and managing users and IoT devices at any scale. To vizialize data and ineract with devices Blynk offers native mobile apps for iOS and Android and the web dashboard, that can be built with drag-and-drop constructor, eliminating the need to write code for the front end. Blynk also includes built-in functionality for over-the-air firmware updates, device provisioning, advanced device and user management tools, alerts and notifications, automations, and data analytics.  
+Blynk is a low-code IoT software platform for connecting devices to the cloud, building mobile apps to remotely control and monitor them, and managing users and IoT devices at any scale. To visualize data and interact with devices, Blynk offers native mobile apps for iOS and Android and a web dashboard that can be built with a drag-and-drop constructor, eliminating the need to write code for the front end. Blynk also includes built-in functionality for over-the-air firmware updates, device provisioning, advanced device and user management tools, alerts and notifications, automations, and data analytics. 
 
 ![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/blynk-particle-logos.png "Particle Blynk Logo")
 
@@ -36,7 +36,7 @@ Pre-designed UI elements, UI elements for visualizing device data and interactin
 
 If you don't already have one, you'll need to sign up for a Blynk account to use this integration.
 
-Go to [Blynk Console](https://blynk.cloud/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to sign in or to create a new account. A Free account is available for the platform exploration. To access more features for advanced personal or commercial use, check out Blynk [pricing page](https://blynk.io/pricing?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to learn more about subscription options.
+Go to the [Blynk Console](https://blynk.cloud/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to sign in or to create a new account. A Free account is available for the platform exploration. To access more features for advanced personal or commercial use, check out the Blynk [pricing page](https://blynk.io/pricing?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to learn more about subscription options.
 
 ## Configure Blynk Template
 
@@ -111,9 +111,9 @@ The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard?u
 ![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/widgets-h.png "Widget settings")
 
 ### Create a Mobile Dashboard
-The Blynk app in [Developer Mode](https://docs.blynk.io/en/blynk.apps/overview#developer-mode) enables you to interactively build a custom app by selecting widgets and then configuring them. When the app is in [End-user Mode](https://docs.blynk.io/en/blynk.apps/overview#end-user-mode) it will present the app with widgets to the user with a behavior just like any other native app.
+The Blynk app in [Developer Mode](https://docs.blynk.io/en/blynk.apps/overview#developer-mode) enables you to interactively build a custom app by selecting widgets and then configuring them. When the app is in [End-user Mode](https://docs.blynk.io/en/blynk.apps/overview#end-user-mode), it will present the app with widgets to the user with a behavior just like any other native app.
 
-Using the [Mobile Dashboard Editor](https://docs.blynk.io/en/blynk.apps/constructor?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) create a UI layout. The exact steps vary between iOS and Android - begin by tapping on the Particle device you activated earlier, tap on the wrench icon, and then the **+** icon to add a widget. Add the following widgets: SuperChart (datastreams V14, V15), Labeled Value (V14), Labeled Value (V15), Button (V16), LED (V17), Labeled Value (V6).
+Using the [Mobile Dashboard Editor](https://docs.blynk.io/en/blynk.apps/constructor?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs), create a UI layout. The exact steps vary between iOS and Android - begin by tapping on the Particle device you activated earlier, tap on the wrench icon, and then the **+** icon to add a widget. Add the following widgets: SuperChart (datastreams V14, V15), Labeled Value (V14), Labeled Value (V15), Button (V16), LED (V17), Labeled Value (V6).
 
 Tap and hold your finger on a widget and drag it to the desired position. Use green handles to resize the widget. 
 
@@ -328,7 +328,7 @@ snprintf(data, sizeof(data), &quot;{\&quot;t\&quot;:\&quot;%s\&quot;,\&quot;v14\
 bool pub_result = Particle.publish(&quot;blynk_https_get&quot;, data, PRIVATE);
 ```
 
-Note that the firmware will pass the unique BLYNK_AUTH_TOKEN defined for each device to the Particle webhook as the variable {{t}}. This allows each device to call the same webhook, at the expense of increasing the cellular payload for each transmission by 32 bytes.  
+Note that the firmware will pass the unique BLYNK_AUTH_TOKEN defined for each device to the Particle webhook as the variable 't'. This allows each device to call the same webhook, at the expense of increasing the cellular payload for each transmission by 32 bytes.  
 
 You can learn more about Particle webhooks by visiting this [documentation link](https://docs.particle.io/reference/cloud-apis/webhooks/). 
 
