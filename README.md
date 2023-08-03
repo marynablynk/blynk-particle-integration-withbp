@@ -268,7 +268,7 @@ int blynkLED(String on_off) {
 ```
 
 ### Hardware authentication on Blynk
-Static AuthToken will be used for device authentication. A unique TemplateI D, Template Name, and AuthToken should be included in the firmware.
+Static AuthToken will be used for device authentication. A unique Template ID, Template Name, and AuthToken should be included in the firmware.
 
 1. In the Blynk.Console, navigate to **Search** > **Devices** and click **+ New Device**.
 2. Choose the **From template** option.
