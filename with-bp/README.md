@@ -39,7 +39,7 @@ Go to the [Blynk Console](https://blynk.cloud/?utm_source=particle&utm_medium=re
 
 ## Configure Blynk Template
 
-*If don't want to configure Blynk template manually - use a Blueprint [Connect a Particle Device]()**. It includes a pre-configured template for this project, a firmware and the further steps on connecting your device, similar to what you see below. Find it in the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **Connect a Particle Device** and follow the guide to connect your device.*
+*If you don't want to configure Blynk template manually - you can use a Blueprint. It includes a pre-configured template for this project, firmware, and further steps on connecting your device, similar to what you see below. Find it in the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **Connect a Particle Device** and follow the guide to connect your device.*
 
 ### Create a Template
 In the Blynk.Console, navigate to **Templates** > **My Templates** and click on the **New Template** button at the upper right of the page, make sure the [Developer Mode](https://docs.blynk.io/en/concepts/developer-mode?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) is enabled. Give the template a name such as 'ParticleDeviceIntegration', set the **Hardware** field to Particle, and choose the appropriate **Connection type** of GSM for cellular devices, or WiFi and click **Done**.
