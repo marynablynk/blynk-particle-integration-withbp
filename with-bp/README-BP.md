@@ -1,4 +1,5 @@
-# Blynk IoT
+# Integration with Blynk IoT
+
 Particle has teamed up with Blynk to create a webhook integration with the [Blynk IoT platform](https://blynk.io/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs).
 
 Blynk is a low-code IoT software platform for connecting devices to the cloud, building mobile apps to remotely control and monitor them, and managing users and IoT devices at any scale. To visualize data and interact with devices, Blynk offers native mobile apps for iOS and Android and a web dashboard that can be built with a drag-and-drop constructor, eliminating the need to write code for the front end. Blynk also includes built-in functionality for over-the-air firmware updates, device provisioning, advanced device and user management tools, alerts and notifications, automations, and data analytics. 
@@ -30,8 +31,6 @@ These are channels for time-stamped data transmitted between the device and the 
 Pre-designed UI elements, UI elements for visualizing device data and interacting with devices accessible to users.
 
 
-# Setting up integration with Blynk IoT
-
 ## Sign up for a Blynk account
 
 If you don't already have one, you'll need to sign up for a Blynk account to use this integration.
@@ -39,21 +38,15 @@ If you don't already have one, you'll need to sign up for a Blynk account to use
 Go to the [Blynk Console](https://blynk.cloud/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to sign in or to create a new account. A Free account is available for the platform exploration. To access more features for advanced personal or commercial use, check out the Blynk [pricing page](https://blynk.io/pricing?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to learn more about subscription options.
 
 
-## Use Blueprint
+## Activate a Blueprint
 
 Use a [Connect a Particle Device]()** Blueprint. It includes a pre-configured template for this project, a firmware and the further steps on how to set up webhooks in Particle Console and Blynk. Find the Blueprint in the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **Connect a Particle Device** and follow the guide to connect your device.*
 
 
-
-# Example use cases
+## Example use cases
 After your device is connected to Blynk, this basic integration can be easily modified to include more functionality. 
 
 - Blynk no-code [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) and [Mobile App](https://docs.blynk.io/en/blynk.apps/constructor?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) builder make it easy to create custom interfaces to visualize data and interact with an IoT device.
 - Blynk [Automations](https://docs.blynk.io/en/concepts/automations?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) allows the end-user of your app to create scenarios where the device automatically performs one or more actions based on a condition. For example, you can trigger a phone notification or send an email when the Particle device detects a sensor condition of interest.
 - Blynk [User Management](https://docs.blynk.io/en/concepts/users?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) functionality allows you to share devices with other users - from a few to thousands and offers a simple and flexible way to set up and manage multi-tenant IoT applications at any scale. 
 - Blynk [Organizations](https://docs.blynk.io/en/concepts/organizations?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) allow you to categorize your devices and users, assigning them roles, permissions, and locations.
-
- 
-# Related Links
-- [Blynk Troubleshooting guide](https://docs.blynk.io/en/troubleshooting/general-issues?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs)
-- [Blynk Documentation](https://blynk.io/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs)
