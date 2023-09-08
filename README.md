@@ -40,7 +40,7 @@ Go to the [Blynk Console](https://blynk.cloud/?utm_source=particle&utm_medium=re
 
 You can choose one of the options below. Both of them lead to the same result, the only difference is that first option allows skipping the **Configure Blynk Template** section from this guide.
 
-1. **Using Blueprint [Connect a Particle Device](https://blynk.cloud/dashboard/blueprints/Library/TMPL4ej7--Xu_)**. The Blueprint includes a pre-configured template on the Blynk platform for this project, a firmware and the further steps on connecting your device, similar to what you see below. Find it in the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **Connect a Particle Device** and follow the guide to connect your device.
+1. **Using a Blueprint**. The Blueprint includes a pre-configured template on the Blynk platform for this project, a firmware and the further steps on connecting your device, similar to what you see below. Find it in the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **[Connect a Particle Device](https://blynk.cloud/dashboard/blueprints/Library/TMPL4ej7--Xu_)** and follow the guide to connect your device.
 2. **Configure from scratch.** This option is described below and includes a step-by-step instruction on how to configure Blynk template, giving a comprehensive understanding of how to build and configure interfaces on Blynk.
 
 ## Configure Blynk Template
