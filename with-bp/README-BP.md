@@ -42,7 +42,7 @@ Go to the [Blynk Console](https://blynk.cloud/?utm_source=particle&utm_medium=re
 
 To simplify the setup process, we've created a Blueprint for this integration. It includes a pre-configured template tailored for this project, a firmware, and a detailed guide on setting up webhooks in both the Particle Console and Blynk. 
 
-1. Go to the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **[Connect a Particle Device]()**
+1. Go to the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **[Connect a Particle Device](https://blynk.cloud/dashboard/blueprints/Library/TMPL4ej7--Xu_)**
 2. Click **Use Blueprint** in the top right and follow the guide to setup webhooks and connect your device.
 
 
