@@ -36,14 +36,10 @@ If you don't already have one, you'll need to sign up for a Blynk account to use
 
 Go to the [Blynk Console](https://blynk.cloud/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to sign in or to create a new account. A Free account is available for the platform exploration. To access more features for advanced personal or commercial use, check out the Blynk [pricing page](https://blynk.io/pricing?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to learn more about subscription options.
 
-## Integration Options
-
-You can choose one of the options below. Both of them lead to the same result, the only difference is that first option allows skipping the **Configure Blynk Template** section from this guide.
-
-1. **Using a Blueprint**. The Blueprint includes a pre-configured template on the Blynk platform for this project, a firmware and the further steps on connecting your device, similar to what you see below. Find it in the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **[Connect a Particle Device](https://blynk.cloud/dashboard/blueprints/Library/TMPL4ej7--Xu_)** and follow the guide to connect your device.
-2. **Configure from scratch.** This option is described below and includes a step-by-step instruction on how to configure Blynk template, giving a comprehensive understanding of how to build and configure interfaces on Blynk.
 
 ## Configure Blynk Template
+
+*If you don't want to configure Blynk template manually - you can use a Blueprint. It includes a pre-configured template for this project, firmware, and further steps on connecting your device, similar to what you see below. Find it in the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **[Connect a Particle Device](https://blynk.cloud/dashboard/blueprints/Library/TMPL4ej7--Xu_)** and follow the guide to connect your device.*
 
 ### Create a Template
 In the Blynk.Console, navigate to **Templates** > **My Templates** and click on the **New Template** button at the upper right of the page, make sure the [Developer Mode](https://docs.blynk.io/en/concepts/developer-mode?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) is enabled. Give the template a name such as 'ParticleDeviceIntegration', set the **Hardware** field to Particle, and choose the appropriate **Connection type** of GSM for cellular devices, or WiFi and click **Done**.
@@ -132,11 +128,11 @@ One channel will be integer values, and the other will be a floating point value
 
 ```
 #include "Particle.h"
-#include <math.h> // this library is for function simulating a sensor
+#include <math.h> // This library is only for function simulating a sensor
 const char *firmware_version = "0.0.0";
 
 double v15 = 3.14159;
-uint32_t simSensor_timer_last = 0; // variable for a function that simulates a sensor
+uint32_t simSensor_timer_last = 0; // This is a variable for a function that simulates a sensor
 uint8_t led_state = LOW;
 bool particle_fn_called = TRUE; // causes the device to publish data immediately after started/boot and connected to the Particle cloud.
 
