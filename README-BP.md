@@ -4,7 +4,7 @@ Particle has teamed up with Blynk to create a webhook integration with the [Blyn
 
 Blynk is a low-code IoT software platform for connecting devices to the cloud, building mobile apps to remotely control and monitor them, and managing users and IoT devices at any scale. To visualize data and interact with devices, Blynk offers native mobile apps for iOS and Android and a web dashboard that can be built with a drag-and-drop constructor, eliminating the need to write code for the front end. Blynk also includes built-in functionality for over-the-air firmware updates, device provisioning, advanced device and user management tools, alerts and notifications, automations, and data analytics. 
 
-![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration/main/images/blynk-particle-logos.png "Particle Blynk Logo")
+![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration-withbp/main/images/blynk-particle-logos.png "Particle Blynk Logo")
 
 This integration enables bi-directional communication between any Particle hardware and Blynk IoT. It allows visualization of the data and control of the Particle device remotely via the Blynk web and mobile dashboard.
 
