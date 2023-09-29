@@ -1,4 +1,5 @@
 # Integration with Blynk IoT
+
 Particle has teamed up with Blynk to create a webhook integration with the [Blynk IoT platform](https://blynk.io/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs).
 
 Blynk is a low-code IoT software platform for connecting devices to the cloud, building mobile apps to remotely control and monitor them, and managing users and IoT devices at any scale. To visualize data and interact with devices, Blynk offers native mobile apps for iOS and Android and a web dashboard that can be built with a drag-and-drop constructor, eliminating the need to write code for the front end. Blynk also includes built-in functionality for over-the-air firmware updates, device provisioning, advanced device and user management tools, alerts and notifications, automations, and data analytics. 
@@ -37,9 +38,21 @@ If you don't already have one, you'll need to sign up for a Blynk account to use
 Go to the [Blynk Console](https://blynk.cloud/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to sign in or to create a new account. A Free account is available for the platform exploration. To access more features for advanced personal or commercial use, check out the Blynk [pricing page](https://blynk.io/pricing?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) to learn more about subscription options.
 
 
-## Configure Blynk Template
+## Activate a Blueprint
 
-*If you don't want to configure Blynk template from scratch - you can use a Blueprint. It includes a pre-configured template for this project, firmware, and further steps on connecting your device, similar to what you see below. Find it in the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **[Connect a Particle Device](https://blynk.cloud/dashboard/blueprints/Library/TMPL4ej7--Xu_)** and follow the guide to connect your device.*
+To simplify the setup process, we've created a Blueprint for this integration. It includes a pre-configured template tailored for this project, a firmware, and a detailed guide on setting up webhooks in both the Particle Console and Blynk. 
+
+1. Go to the **Blynk Console** > **Templates** > **Blueprints** > **All Blueprints** > **[Connect a Particle Device](https://blynk.cloud/dashboard/blueprints/Library/TMPL4ej7--Xu_)**
+2. Click **Use Blueprint** in the top right and follow the guide to setup webhooks and connect your device.
+
+  
+<details>  
+  
+  **<summary> Configure integration without a Blueprint</summary>**  
+  
+In this section, we provide an alternative guide on setting up integration from scratch, bypassing the Blueprint. It includes steps outlining how to configure a Blynk Template, offering a thorough insight into building and configuring interfaces on Blynk.  
+
+## Configure Blynk Template
 
 ### Create a Template
 In the Blynk.Console, navigate to **Templates** > **My Templates** and click on the **New Template** button at the upper right of the page, make sure the [Developer Mode](https://docs.blynk.io/en/concepts/developer-mode?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) is enabled. Give the template a name such as 'ParticleDeviceIntegration', set the **Hardware** field to Particle, and choose the appropriate **Connection type** of GSM for cellular devices, or WiFi and click **Done**.
@@ -429,16 +442,12 @@ Bearer 40_character_Particle_access_token
 - Make sure the BLYNK_AUTH_TOKEN in your firmware matches what is shown in the Blynk console **Search** > **Device** > **Device Info**.
 - If your Particle device has a built-in RGB then it should be breathing cyan if it is connected to the Particle cloud. 
 - Perform all of the tests under **Testing** to be sure that each communication step from the Particle hardware to Blynk and back works properly.
+</details>
 
 ## Example use cases
-After your device is connected to Blynk, this integration can be easily modified to include more functionality. 
+After your device is connected to Blynk, this basic integration can be easily modified to include more functionality. 
 
 - Blynk no-code [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) and [Mobile App](https://docs.blynk.io/en/blynk.apps/constructor?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) builder make it easy to create custom interfaces to visualize data and interact with an IoT device.
 - Blynk [Automations](https://docs.blynk.io/en/concepts/automations?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) allows the end-user of your app to create scenarios where the device automatically performs one or more actions based on a condition. For example, you can trigger a phone notification or send an email when the Particle device detects a sensor condition of interest.
 - Blynk [User Management](https://docs.blynk.io/en/concepts/users?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) functionality allows you to share devices with other users - from a few to thousands and offers a simple and flexible way to set up and manage multi-tenant IoT applications at any scale. 
 - Blynk [Organizations](https://docs.blynk.io/en/concepts/organizations?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs) allow you to categorize your devices and users, assigning them roles, permissions, and locations.
-
- 
-## Related Links
-- [Blynk Troubleshooting guide](https://docs.blynk.io/en/troubleshooting/general-issues?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs)
-- [Blynk Documentation](https://blynk.io/?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs)
