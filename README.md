@@ -50,7 +50,7 @@ To simplify the setup process, we've created a Blueprint for this integration. I
   
   **<summary> Configure integration without a Blueprint</summary>**  
   
-In this section, we provide an alternative guide on setting up integration from scratch, bypassing the Blueprint. It includes steps outlining how to configure a Blynk Template, offering a thorough insight into building and configuring interfaces on Blynk.  
+In this section, we provide an alternative guide on setting up integration from scratch, bypassing the Blueprint. It includes steps on how to configure a Blynk Template, offering a thorough insight into building and configuring interfaces on Blynk.  
 
 ## Configure Blynk Template
 
