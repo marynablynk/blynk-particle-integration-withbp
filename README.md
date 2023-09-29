@@ -417,7 +417,8 @@ Replace your Particle [device ID](https://console.particle.io/) and the 40-chara
 The "blynk_led" at the end of the WEBHOOK URL is the Particle cloud function key that is referenced in the firmware as:
 
 ```ruby
-void setup() {
+void setup()
+{
   ...
   Particle.function("blynk_led", blynkLED);
   ...
