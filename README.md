@@ -28,7 +28,7 @@ Consider smart home switches as an example. These devices typically perform comp
 These are channels for time-stamped data transmitted between the device and the cloud. For example, sensor data should pass through a Datastream. 
 
 ### Widgets
-Pre-designed UI elements, UI elements for visualizing device data and interacting with devices accessible to users.
+Pre-designed UI elements for visualizing device data and interacting with devices accessible to users.
 
 
 ## Sign up for a Blynk account
@@ -125,19 +125,21 @@ The [Web Dashboard](https://docs.blynk.io/en/blynk.console/templates/dashboard?u
 ![alt text](https://raw.githubusercontent.com/marynablynk/blynk-particle-integration-withbp/main/images/widgets-h.png "Widget settings")
 
 ### Create a Mobile Dashboard
-The Blynk app in [Developer Mode](https://docs.blynk.io/en/blynk.apps/overview#developer-mode) enables you to interactively build a custom app by selecting widgets and then configuring them. When the app is in [End-user Mode](https://docs.blynk.io/en/blynk.apps/overview#end-user-mode), it will present the app with widgets to the user with a behavior just like any other native app.
+The Blynk app in [Developer Mode](https://docs.blynk.io/en/blynk.apps/overview#developer-mode) enables you to interactively build a custom app by selecting widgets and then configuring them. When the app is in the [End-user Mode](https://docs.blynk.io/en/blynk.apps/overview#end-user-mode), it behaves like any other native app, presenting users with the widgets.
 
-Using the [Mobile Dashboard Editor](https://docs.blynk.io/en/blynk.apps/constructor?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs), create a UI layout. The exact steps vary between iOS and Android - begin by tapping on the Particle device you activated earlier, tap on the wrench icon, and then the **+** icon to add a widget. Add the following widgets: SuperChart (datastreams V14, V15), Labeled Value (V14), Labeled Value (V15), Button (V16), LED (V17), Labeled Value (V6).
+Using the [Mobile Dashboard Editor](https://docs.blynk.io/en/blynk.apps/constructor?utm_source=particle&utm_medium=referral&utm_campaign=integr&utm_content=docs), create a UI layout. The exact steps vary between iOS and Android - start by tapping on the Particle device you activated earlier, tap on the wrench icon, and then the **+** icon to add a widget. Add the following widgets: SuperChart (datastreams V14, V15), Labeled Value (V14), Labeled Value (V15), Button (V16), LED (V17), Labeled Value (V6).
 
-Tap and hold your finger on a widget and drag it to the desired position. Use green handles to resize the widget. 
+Hold and drag a widget to place it in your desired position. Use green handles to resize the widget. 
 
 After the widgets are added to the dashboard canvas, you can tap on it to configure it. Every widget has **Settings** and **Design** options at the bottom of the screen. Configure each widget similarly to the dashboard widgets.
 
 ## Firmware 
 
-Any Particle hardware (Tracker One, Tracker SoM, Boron, B Series SoM, Photon 2, P2, Argon, Photon, Electron, E Series, Core) running the provided firmware will be sending two channels of simulated sensor data from the hardware to Blynk.  
+Any Particle hardware such as Tracker One, Tracker SoM, Boron, B Series SoM, Photon 2, P2, Argon, Photon, Electron, E Series, and Core running the provided firmware will send two channels of simulated sensor data to Blynk.
 
-One channel will be integer values, and the other will be a floating point value. The data sent will be visualized on the Blynk web dashboard and mobile app in both a chart and a value display. Additionally, a switch widget on the web dashboard and mobile app will send data to the hardware to control it. The switch data is simply an On/Off (1/0) state that will be sent back to Blynk by the firmware to control a Blynk LED widget, and it will toggle the state of the built-in LED on the Particle device if it exists. A UTC-based timestamp will also be displayed on the web dashboard and mobile app so the last time data was published from the Particle device will be known.
+One channel will send integer values, while the other will transmit a floating point value. This data will be visualized on the Blynk web dashboard and mobile app, displayed both in a chart and as a value.
+
+Additionally, a switch widget on both the web dashboard and mobile app will relay data to the hardware for control purposes. The switch data represents an On/Off (1/0) state. This state will control a Blynk LED widget through the firmware and will also toggle the state of the built-in LED on the Particle device, if present. Lastly, a UTC-based timestamp displayed on both the web dashboard and mobile app will indicate the last time data was published from the Particle device.  
 
 ```
 #include "Particle.h"
