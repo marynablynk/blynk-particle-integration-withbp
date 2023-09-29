@@ -141,7 +141,7 @@ One channel will send integer values, while the other will transmit a floating p
 
 Additionally, a switch widget on both the web dashboard and mobile app will relay data to the hardware for control purposes. The switch data represents an On/Off (1/0) state. This state will control a Blynk LED widget through the firmware and will also toggle the state of the built-in LED on the Particle device, if present. Lastly, a UTC-based timestamp displayed on both the web dashboard and mobile app will indicate the last time data was published from the Particle device.  
 
-```
+```ruby
 #include "Particle.h"
 #include <math.h> // This library is only for function simulating a sensor
 const char *firmware_version = "0.0.0";
@@ -342,7 +342,7 @@ A Particle integration webhook running on the Particle cloud will accept the dat
 3. After the device is added, click on the **Integrations** on the left > **Add New Integration** and select the **Webhook** option
 4. Switch to **Custom template** and fill it with the following lines:
 
-```
+```ruby
 {
     "name": "blynk_particle",
     "event": "blynk_https_get",
@@ -373,7 +373,7 @@ A Particle integration webhook running on the Particle cloud will accept the dat
 
 
 Particle.publish() call in the firmware:
-```
+```ruby
 char data[90]; 
 // Note the escaped double quotes around the &quot;&quot;t&quot;&quot; for BLYNK_AUTH_TOKEN.  
 snprintf(data, sizeof(data), &quot;{\&quot;t\&quot;:\&quot;%s\&quot;,\&quot;v14\&quot;:%u,\&quot;v15\&quot;:%f,\&quot;v16\&quot;:%u,\&quot;v17\&quot;:%u}&quot;, BLYNK_AUTH_TOKEN, millis(), v15, led_state, led_state);
@@ -408,7 +408,7 @@ Note that the **Blynk webhook request quota is 1 per minute*** so any datastream
 **Webhook URL**
 
 The format is: 
-```
+```ruby
 https://api.particle.io/v1/devices/[your 24 character Particle device ID]/blynk_led
 ```  
 
@@ -416,7 +416,7 @@ Replace your Particle [device ID](https://console.particle.io/) and the 40-chara
 
 The "blynk_led" at the end of the WEBHOOK URL is the Particle cloud function key that is referenced in the firmware as:
 
-```
+```ruby
 void setup() {
   ...
   Particle.function("blynk_led", blynkLED);
@@ -427,7 +427,7 @@ void setup() {
 **HTTP Headers (optional)**
 
 The 'HTTP Headers' with the key "Authorization" has a value consisting of the string "Bearer " (with a space after it), and then followed by the 40-character Particle access token.  
-```
+```ruby
 Bearer 40_character_Particle_access_token
 ```
 
